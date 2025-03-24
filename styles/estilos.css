@@ -7,7 +7,6 @@
 }
 input {
   padding: 10px;
-  margin-top: 20px;
   border: 1px #a1a1a1 solid;
   text-decoration: none;
   border-radius: 5px;
@@ -93,9 +92,6 @@ select {
 #cantidad_hijos, #edad_cirugia, #complicaciones, #lactancia, #juega_con, #estereotipos{
   margin: 0;
 }
-#talla{
-  margin-top: 10px;
-}
 .btn_enviar{
   background-color: #22ae8a;
   border: none;
@@ -114,4 +110,27 @@ select {
 .btn_envio{
   display: flex;
   justify-content: flex-end;
+}
+#comprension_verbal, #expresion_verbal, #lectura,
+#pragmatica, #articulacion, #inteligibilidad,
+#prosodia, #obsDeglucion,#sensibilidadIntra,
+#masticacion, #calidadVocal, #intensidadControl,
+#tono,#resistencia, #observaciones, #comprensionAud{
+  width: 1000px;
+}
+#velocidad{
+  width: 910px;
+}
+#dismorfia{
+  width: 994px;
+}
+#movOrofaciales, #reflejosOrofaciales{
+  width: 980px;
+}
+#deglucion, #evaluacionInstrumental, #audiometria,
+#dispositivos, #percepcionPerdida{
+  width: 1102px;
+}
+#tonoMuscular{
+  width: 825px;
 }
