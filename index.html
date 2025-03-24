@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ficha clínica</title>
+    <link rel="stylesheet" href="/styles/estilos.css" type="text/css" />
+  </head>
+  <body>
+    <form id="formulario_ficha_clinica" action="">
+      <h3>Valoración Fonoaudiológica Integral del Adulto y Persona Mayor</h3>
+      <div class="titulos_fondo"><h3>Antecedentes clínicos</h3></div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <label class="titulo_radio" for="opcion"
+            >Antecedentes médicos relevantes:</label
+          >
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="(diagnósticos previos, cirugías, hospitalizaciones, historia farmacológica, comorbilidades)."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <label class="titulo_radio" for="opcion"
+            >Estado nutricional general:</label
+          >
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="(dieta, número de comidas al día, número de alimentos por comida, dieta preescrita)."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <label class="titulo_radio" for="opcion">Valoración sensorial:</label>
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="(auditiva, visual, táctil, propioceptiva. etc)."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <label class="titulo_radio" for="opcion">Exploración física:</label>
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="(observ. Aspecto, cuidados, aseo y colaboración /temperatura, presión arterial, frecuencia cardiaca, y frecuencia respiratoria)."
+          ></textarea>
+        </div>
+      </div>
+      <!-- -----------------------------Seccion dos---------------------------------- -->
+      <div class="titulos_fondo"><h3>Cognición - salud mental</h3></div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionYesavage"
+            >Salud Mental Yesavage, aplica:</label
+          >
+          <div class="radio_selections_title">
+            <label>
+              <input
+                type="checkbox"
+                name="opcionYesavage"
+                value="depresionGeriatrica"
+              />
+              Escala de depresión geriátrica </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                name="opcionYesavage"
+                value="cuestionarioFqh9"
+              />
+              Cuestionario FQH9 </label
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="Estado anímico, labilidad emocional, anergia/hipoergía, anhedonia/hipohedonia, T. del apetito, T. del sueño, signos de ansiedad, ideación de muerte, ideación o tentativas autolíticas, quejas somáticas)."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionCognicion"
+            >Cognición, aplica:</label
+          >
+          <div class="radio_selections_title">
+            <label>
+              <input type="checkbox" name="opcionCognicion" value="MOCA" />
+              MOCA. Montreal cognitiva Assessment </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                name="opcionCognicion"
+                value="miniMental"
+              />
+              Mini mental </label
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="Nivel de escolarización, profesión/ Presencia de factores de riesgo vascular, historia familiar de demencia, antecedentes psiquiátricos, consumo de fármacos y tóxicos, orientación, quejas de deterioro de memoria, problemas de reconocimiento de familiares y amigos."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionFuncional"
+            >Funcional, aplica:</label
+          >
+          <div class="radio_selections_title">
+            <label>
+              <input
+                type="checkbox"
+                name="opcionFuncional"
+                value="escalaKatz"
+              />
+              Escala de Katz </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                name="opcionFuncional"
+                value="cuestionarioAct"
+              />
+              Cuestionario de act. de la vida diaria ( V ) </label
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="En esta dimensión de la evaluación se considera la capacidad del usuario para ejecutar las actividades de la vida diaria básicas, instrumentales y avanzadas. El objetivo es determinar el nivel de independencia en sus contextos cotidianos."
+          ></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionSocio"
+            >Socio ambiental, aplica:</label
+          >
+          <div class="radio_selections_title">
+            <label>
+              <input type="checkbox" name="opcionSocio" value="escalaOars" />
+              Escala OARS de recursos sociales </label
+            ><br />
+            <label>
+              <input
+                type="checkbox"
+                name="opcionSocio"
+                value="escalaFiladelfia"
+              />
+              Escala de Filadelfia </label
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div class="row row_dif">
+        <div class="for_selections">
+          <textarea
+            id="manejo"
+            name="manejo"
+            rows="4"
+            cols="200"
+            placeholder="En esta dimensión se consideran los antecedentes del usuario y su entorno social y familiar. El objetivo es determinar las necesidades de apoyo social, familiar y económica para garantizar el bienestar de la persona mayor."
+          ></textarea>
+        </div>
+      </div>
+      <!-- -----------------------------Seccion tres---------------------------------- -->
+      <div class="titulos_fondo">
+        <h3>Antecedentes generales de la evaluación fonoaudiológica</h3>
+      </div>
+      <label class="titulo_radio" for="opcion">Comunicación - Lenguaje</label>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionComprension"
+          >Comprensión verbal</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionComprension" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionComprension"
+              value="si"
+              id="comprensionSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="comprension_verbal"
+            name="comprension_verbal"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionExpresion"
+          >Expresión verbal (Ej. fluidez, vocabulario, estructuras
+          gramaticales)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionExpresion" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionExpresion"
+              value="si"
+              id="expresionSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="expresion_verbal"
+            name="expresion_verbal"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionLectura"
+          >Lectura y escritura (Capacidad de comprensión y producción)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionLectura" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionLectura"
+              value="si"
+              id="lecturaSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="lectura"
+            name="lectura"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionPragmatica"
+          >Pragmática (Ej. habilidades de interacción, toma de turnos,
+          coherencia en el discurso)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionPragmatica" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionPragmatica"
+              value="si"
+              id="pragmaticaSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="pragmatica"
+            name="pragmatica"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <label class="titulo_radio" for="opcion"
+        >Observaciones sobre el entorno comunicativo</label
+      >
+      <div class="row row_dif">
+        <div class="for_selections">
+          <textarea
+            id="relacion"
+            name="relacion"
+            rows="4"
+            cols="200"
+            placeholder="(Ej. nivel de apoyo familiar, dispositivos de ayuda)"
+          ></textarea>
+        </div>
+      </div>
+      <label class="titulo_radio" for="opcion">Habla</label>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionArticulacion"
+          >Articulación (Ej. precisión de sonidos, errores específicos)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionArticulacion" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionArticulacion"
+              value="si"
+              id="articulacionSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="articulacion"
+            name="articulacion"
+            placeholder="Observaciones"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionVelocidad"
+          >Velocidad de habla</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionVelocidad" value="no" />
+            Normal</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionVelocidad"
+              value="si"
+              id="velocidadSi"
+            />
+            Acelerada / Disminuida</label
+          >
+          <input
+            type="text"
+            id="velocidad"
+            name="velocidad"
+            placeholder="Observaciones"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionInteligibilidad"
+          >Inteligibilidad</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionInteligibilidad" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionInteligibilidad"
+              value="si"
+              id="intelegibilidadSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="inteligibilidad"
+            name="inteligibilidad"
+            placeholder="Observaciones"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionProsodia"
+          >Prosodia (Intensidad, tono, ritmo)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionProsodia" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionProsodia"
+              value="si"
+              id="prosodiaSi"
+            />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="prosodia"
+            name="prosodia"
+            placeholder="Observación"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionDismorfia"
+          >Dismorfia o apraxia</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionDismorfia" value="no" />
+            Presencia</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionDismorfia"
+              value="si"
+              id="dismorfiaAusencia"
+            />
+            Ausencia</label
+          >
+          <input
+            type="text"
+            id="dismorfia"
+            name="dismorfia"
+            placeholder="Observación"
+          />
+        </div>
+      </div>
+      <label class="titulo_radio" for="opcion">Deglución</label>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionDeglucion"
+          >Antecedentes de disfagia</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionDeglucion" value="no" /> No</label
+          >
+          <label
+            ><input type="radio" name="opcionDeglucion" value="si" /> Si</label
+          >
+          <input
+            type="text"
+            id="deglucion"
+            name="deglucion"
+            placeholder="Observaciones"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionObservDeglucion"
+          >Observación de la deglución: (Ej. control labial, movimiento lingual,
+          coordinación)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionObservDeglucion" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input type="radio" name="opcionObservDeglucion" value="si" />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="ObsDeglucion"
+            name="ObsDeglucion"
+            placeholder="Observaciones"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionInteligibilidad"
+          >Consistencia de alimentos y líquidos</label
+        >
+        <div class="row">
+          <div class="radio_selections">
+            <label class="titulo_radio" for="opcionSolidos">Sólidos</label>
+            <div class="radio_selections_title">
+              <label
+                ><input type="radio" name="opcionSolidos" value="no" />
+                Dificultad</label
+              >
+              <label
+                ><input type="radio" name="opcionSolidos" value="si" />
+                Ninguna</label
+              >
+            </div>
+          </div>
+          <div class="radio_selections">
+            <label class="titulo_radio" for="opcionLiquidos">Líquidos:</label>
+            <div class="radio_selections_title">
+              <label
+                ><input type="radio" name="opcionLiquidos" value="no" />
+                Dificultad</label
+              >
+              <label
+                ><input type="radio" name="opcionLiquidos" value="si" />
+                Ninguna</label
+              >
+            </div>
+          </div>
+          <div class="radio_selections">
+            <label class="titulo_radio" for="opcionSemi">Semi-sólidos:</label>
+            <div class="radio_selections_title">
+              <label
+                ><input type="radio" name="opcionSemi" value="no" />
+                Dificultad</label
+              >
+              <label
+                ><input type="radio" name="opcionSemi" value="si" />
+                Ninguna</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionReflejo"
+          >Reflejo de deglución</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionReflejo" value="no" />
+            Normal</label
+          >
+          <label
+            ><input type="radio" name="opcionReflejo" value="si" />
+            Alterado</label
+          >
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionTos"
+          >Tos o atragantamiento</label
+        >
+        <div class="radio_selections_title">
+          <label><input type="radio" name="opcionTos" value="no" /> No</label>
+          <label
+            ><input type="radio" name="opcionTos" value="si" /> Si /
+            Frecuencia</label
+          >
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionEvaluacion"
+          >Evaluación instrumental (Ej. videofluoroscopia, FEES)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionEvaluacion" value="no" /> No</label
+          >
+          <label
+            ><input type="radio" name="opcionEvaluacion" value="si" /> Si</label
+          >
+          <input
+            type="text"
+            id="evaluacionInstrumental"
+            name="evaluacionInstrumental"
+            placeholder="Cual"
+          />
+        </div>
+      </div>
+      <label class="titulo_radio" for="opcion">Motrocidad orofacial</label>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionTono">Tono muscular</label>
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionTono" value="no" /> Adecuada</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionTono"
+              value="si"
+              id="articulacionSi"
+            />
+            Alterado / Hipotonía/Hipertonía</label
+          >
+          <input
+            type="text"
+            id="tonoMuscular"
+            name="tonoMuscular"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionMovimientos"
+          >Movimientos orofaciales voluntarios (Ej. elevación de la lengua,
+          movimientos labiales)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionMovimientos" value="no" />
+            Adecuados</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionMovimientos"
+              value="si"
+              id="velocidadSi"
+            />
+            Alterados</label
+          >
+          <input
+            type="text"
+            id="movOrofaciales"
+            name="movOrofaciales"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionReflejosOrofaciales"
+          >Reflejos orofaciales</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionReflejosOrofaciales" value="no" />
+            Adecuados</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="opcionReflejosOrofaciales"
+              value="si"
+              id="intelegibilidadSi"
+            />
+            Alterados</label
+          >
+          <input
+            type="text"
+            id="reflejosOrofaciales"
+            name="reflejosOrofaciales"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionSensibilidad"
+          >Sensibilidad intra y extraoral</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionSensibilidad" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input type="radio" name="opcionSensibilidad" value="si" />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="sensibilidadIntra"
+            name="sensibilidadIntra"
+            placeholder="Describir"
+          />
+        </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionMasticacion"
+          >Masticación (Capacidad de masticar, tipos de alimentos con
+          dificultad)</label
+        >
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionMasticacion" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input type="radio" name="opcionMasticacion" value="si" />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="masticacion"
+            name="masticacion"
+            placeholder="Describir"
+          />
+        </div>      <div class="radio_selections">
+          <label class="titulo_radio" for="opcionCalidad"
+            >Voz</label>
+          <label class="titulo_radio"
+            >Calidad vocal (Ej. ronquera, claridad)</label
+          >
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionCalidad" value="no" />
+              Adecuada</label
+            >
+            <label
+              ><input type="radio" name="opcionCalidad" value="si" />
+              Alterada</label
+            >
+            <input
+              type="text"
+              id="calidadVocal"
+              name="calidadVocal"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        </div>      
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionIntensidad"
+            >Intensidad y control del volumen</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionIntensidad" value="no" />
+              Adecuada</label
+            >
+            <label
+              ><input type="radio" name="opcionIntensidad" value="si" />
+              Alterada</label
+            >
+            <input
+              type="text"
+              id="intensidadControl"
+              name="intensidadControl"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionTono"
+            >Tono</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionTono" value="no" />
+              Adecuada</label
+            >
+            <label
+              ><input type="radio" name="opcionTono" value="si" />
+              Alterada</label
+            >
+            <input
+              type="text"
+              id="tono"
+              name="tono"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionResistencia"
+            >Resistencia vocal(Ej. fatiga vocal)</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionResistencia" value="no" />
+              Adecuada</label
+            >
+            <label
+              ><input type="radio" name="opcionResistencia" value="si" />
+              Alterada</label
+            >
+            <input
+              type="text"
+              id="resistencia"
+              name="resistencia"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionObservaciones"
+          >Observaciones sobre hábitos vocales (Ej. antecedentes de abuso vocal)</label>
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionObservaciones" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input type="radio" name="opcionObservaciones" value="si" />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="observaciones"
+            name="observaciones"
+            placeholder="Observaciones"
+          />
+        </div>
+    </div>
+        </div>      
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionAudiometria"
+            >Audición</label>
+          <label class="titulo_radio"
+            >Pruebas auditivas (Ej. audiometría, impedanciometría)</label
+          >
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionAudiometria" value="no" />
+              No</label
+            >
+            <label
+              ><input type="radio" name="opcionAudiometria" value="si" />
+              Si</label
+            >
+            <input
+              type="text"
+              id="audiometria"
+              name="audiometria"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        </div>      
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionComprensionAud"
+            >Comprensión auditiva en ambiente de ruido</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionComprensionAud" value="no" />
+              Adecuada</label
+            >
+            <label
+              ><input type="radio" name="opcionComprensionAud" value="si" />
+              Alterada</label
+            >
+            <input
+              type="text"
+              id="comprensionAud"
+              name="comprensionAud"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionDispositivos"
+            >Uso de dispositivos auditivos</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionDispositivos" value="no" />
+              No</label
+            >
+            <label
+              ><input type="radio" name="opcionDispositivos" value="si" />
+              Si</label
+            >
+            <input
+              type="text"
+              id="dispositivos"
+              name="dispositivos"
+              placeholder="Observaciones"
+            />
+          </div>
+      </div>
+        <div class="radio_selections">
+          <label class="titulo_radio" for="opcionPercepcionPerdida"
+            >Percepción de pérdida auditiva(Descripción subjetiva del paciente)</label>
+          <div class="radio_selections_title">
+            <label
+              ><input type="radio" name="opcionPercepcionPerdida" value="no" />
+              No</label
+            >
+            <label
+              ><input type="radio" name="opcionPercepcionPerdida" value="si" />
+              Si</label
+            >
+            <input
+              type="text"
+              id="percepcionPerdida"
+              name="percepcionPerdida"
+              placeholder="Descripcion"
+            />
+          </div>
+      </div>
+      <div class="radio_selections">
+        <label class="titulo_radio" for="opcionObservaciones"
+          >Observaciones sobre hábitos vocales (Ej. antecedentes de abuso vocal)</label>
+        <div class="radio_selections_title">
+          <label
+            ><input type="radio" name="opcionObservaciones" value="no" />
+            Adecuada</label
+          >
+          <label
+            ><input type="radio" name="opcionObservaciones" value="si" />
+            Alterada</label
+          >
+          <input
+            type="text"
+            id="observaciones"
+            name="observaciones"
+            placeholder="Observaciones"
+          />
+        </div>
+    </div>
+      <div class="btn_envio">
+        <button class="btn_enviar">Guardar datos</button>
+      </div>
+    </form>
+    <script src="/styles/script.js"></script>
+  </body>
+</html>
